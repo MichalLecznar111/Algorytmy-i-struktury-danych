@@ -1,0 +1,9 @@
+def kalk(i):
+    if i == 0:
+        return "0"
+    elif i == 1:
+        return "1"
+    else:
+        return kalk(i // 2) + str(i % 2)
+
+print(kalk(20))
